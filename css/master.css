@@ -1,0 +1,81 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+header {
+    text-align: center;
+}
+header h1:not(.normal) {
+    margin-top: 0;
+}
+header h1.normal {
+    font-weight: 200;
+    margin-bottom: 0;
+    margin-top: 70px;
+}
+h1 , h3 {
+    color: hsl(234, 12%, 34%);
+}
+h1 + p {
+    margin-bottom: 50px;
+}
+p {
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+}
+h3 + p {
+    padding-right: 35px;
+}
+.content {
+    text-align: center;
+}
+.content .box {
+    border-radius: 5px;
+    background-color: white;
+    width: 340px;
+    box-shadow: 0px 5px 20px -7px hsl(229, 6%, 66%);
+    border-top: 4px solid;
+    display: inline-block;
+    padding: 30px;
+    text-align: justify;
+    margin: 15px;
+}
+.content .box.cyan {
+    border-color: hsl(180, 62%, 55%);
+}
+.content .box.red {
+    border-color: hsl(0, 78%, 62%);
+}
+.content .box.orange {
+    border-color: hsl(34, 97%, 64%);
+}
+.content .box.blue {
+    border-color: hsl(212, 86%, 64%);
+}
+.content .box h3 {
+    margin-top: 0;
+}
+.content .box img {
+    float: right;
+    padding: 10px;
+}
+@media (max-width: 900px) {
+    .content {
+        display: grid;
+    }
+    .content .box.orange {
+        grid-row-start: 3;
+    }
+}
+@media (min-width: 1312px) {
+    .content .box.cyan , .content .box.blue {
+        transform: translateY(55%);
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
